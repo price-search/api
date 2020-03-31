@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "dracula-theme.theme-dracula",
+        "pkief.material-icon-theme",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "eg2.vscode-npm-script",
+        "ashinzekene.nestjs"
+    ]
+}
