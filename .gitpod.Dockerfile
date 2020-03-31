@@ -1,6 +1,6 @@
 FROM gitpod/workspace-mongodb
 
-RUN npm install --global @nestjs/cli
+RUN npm install --global @nestjs/cli commitizen
 
 # Install custom tools, runtime, etc. using apt-get
 # For example, the command below would install "bastet" - a command line tetris clone:
