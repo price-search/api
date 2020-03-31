@@ -1,0 +1,27 @@
+image:
+  file: .gitpod.Dockerfile
+
+# List the ports you want to expose and what to do when they are served. See https://www.gitpod.io/docs/config-ports/
+ports:
+  - port: 3000
+    onOpen: ignore
+
+# List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
+tasks:
+  - name: MongoDB
+    command: |
+      mkdir -p /workspace/data
+      mongod --dbpath /workspace/data
+  - name: nest start
+    command: npm run start:dev
+  - init: | # runs during pre-build and open a terminal at right
+      npm install
+      npm run build
+
+vscode:
+  extensions:
+    - PKief.material-icon-theme@4.0.1:uW65d0I1ibFxFDWPtc2zkQ==
+    - dracula-theme.theme-dracula@2.21.0:RtzqaQieYebr5vxh8cZ+pQ==
+    - eg2.vscode-npm-script@0.3.11:peDPJqeL8FmmJiabU4fAJQ==
+    - ashinzekene.nestjs@1.4.0:AkD5nGSQKUH/DgLg/+4p4Q==
+    - Orta.vscode-jest@3.1.1:LQ3p9BsZrD/DSsU8zMC01g==
