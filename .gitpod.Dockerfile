@@ -1,4 +1,4 @@
-FROM gitpod/workspace-mongodb
+FROM gitpod/workspace-postgres
 
 RUN npm install --global @nestjs/cli commitizen
 
