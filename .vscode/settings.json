@@ -1,5 +1,7 @@
 {
-    "editor.formatOnSave": true,
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Dracula"
+  "editor.formatOnSave": true,
+  "cSpell.words": [
+    "nestjs",
+    "postgres"
+]
 }
