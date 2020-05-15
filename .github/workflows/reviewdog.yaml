@@ -10,3 +10,4 @@ jobs:
         with:
           reporter: github-pr-review
           eslint_flags: "{src,apps,libs,test}/**/*.ts"
+          fail_on_error: true
