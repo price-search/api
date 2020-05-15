@@ -10,11 +10,12 @@ ports:
 
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - name: nest start
+  - name: Opening Swagger UI
+    command: gp await-port 3000 && gp preview http://localhost/api-docs; exit
+  - name: Running API
+    init: npm install && npm run build
     command: npm run start:dev
-  - init: | # runs during pre-build and open a terminal at right
-      npm install
-      npm run build
+  - name: Terminal
 
 vscode:
   extensions:
