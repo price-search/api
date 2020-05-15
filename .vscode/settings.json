@@ -4,6 +4,7 @@
     "nestjs",
     "nestjsx",
     "postgres",
+    "reviewdog",
     "typeorm"
 ]
 }
