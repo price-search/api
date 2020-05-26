@@ -7,6 +7,10 @@ import { Connection } from 'typeorm';
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
+      host: 'db',
+      username: 'user',
+      password: 'pass',
+      database: 'data',
       autoLoadEntities: true,
       synchronize: true,
     }),
@@ -16,5 +20,5 @@ import { Connection } from 'typeorm';
   providers: [],
 })
 export class AppModule {
-  constructor(private connection: Connection) {}
+  constructor(private connection: Connection) { }
 }
