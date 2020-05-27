@@ -34,10 +34,6 @@ jobs:
 
     env:
       TYPEORM_HOST: localhost
-      TYPEORM_PORT: 5432
-      TYPEORM_USERNAME: user
-      TYPEORM_PASSWORD: pass
-      TYPEORM_DATABASE: data
 
     steps:
       - uses: actions/checkout@v2
