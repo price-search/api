@@ -6,23 +6,10 @@ import { ShopsModule } from './shops/shops.module';
 import { OffersModule } from './offers/offers.module';
 
 @Module({
-  imports: [
-    TypeOrmModule.forRoot({
-      type: 'postgres',
-      host: 'db',
-      username: 'user',
-      password: 'pass',
-      database: 'data',
-      autoLoadEntities: true,
-      synchronize: true,
-    }),
-    ProductsModule,
-    ShopsModule,
-    OffersModule,
-  ],
+  imports: [TypeOrmModule.forRoot(), ProductsModule, ShopsModule, OffersModule],
   controllers: [],
   providers: [],
 })
 export class AppModule {
-  constructor(private connection: Connection) { }
+  constructor(private connection: Connection) {}
 }

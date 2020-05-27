@@ -1,0 +1,10 @@
+default:
+  type: postgres
+  host: db
+  port: 5432
+  username: user
+  password: pass
+  database: data
+  entities:
+    - dist/**/*.entity.js
+  synchronize: true

@@ -14,21 +14,30 @@ jobs:
     runs-on: ubuntu-latest
 
     services:
-      db:
+      postgres:
         image: postgres
         env:
-          POSTGRES_PASSWORD: pass
           POSTGRES_USER: user
+          POSTGRES_PASSWORD: pass
           POSTGRES_DB: data
         options: >-
           --health-cmd pg_isready
           --health-interval 10s
           --health-timeout 5s
           --health-retries 5
+        ports:
+          - 5432:5432
 
     strategy:
       matrix:
         node-version: [10.x, 12.x]
+
+    env:
+      TYPEORM_HOST: localhost
+      TYPEORM_PORT: 5432
+      TYPEORM_USERNAME: user
+      TYPEORM_PASSWORD: pass
+      TYPEORM_DATABASE: data
 
     steps:
       - uses: actions/checkout@v2
