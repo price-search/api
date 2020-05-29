@@ -15,10 +15,12 @@ describe('AppController (e2e)', () => {
     await app.init();
   });
 
-  it('/ (GET)', () => {
+  it('Create product', () => {
     return request(app.getHttpServer())
-      .get('/')
-      .expect(200)
-      .expect('Hello World!');
+      .post('/products')
+      .send({ name: 'Sabonete Protex' })
+      .set('Accept', 'application/json')
+      .expect('Content-Type', /json/)
+      .expect(201);
   });
 });

@@ -2,7 +2,7 @@ import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
 import { Offer } from '../offers/offer.entity';
 
 @Entity()
-export class Product {
+export class Shop {
   @PrimaryGeneratedColumn()
   public id: number;
 
@@ -11,7 +11,7 @@ export class Product {
 
   @OneToMany(
     () => Offer,
-    offer => offer.product,
+    offer => offer.shop,
   )
   public offers!: Offer[];
 }
