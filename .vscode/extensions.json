@@ -1,8 +1,9 @@
 {
-    "recommendations": [
-        "esbenp.prettier-vscode",
-        "dbaeumer.vscode-eslint",
-        "eg2.vscode-npm-script",
-        "ashinzekene.nestjs"
-    ]
+  "recommendations": [
+    "ms-azuretools.vscode-azurefunctions",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "eg2.vscode-npm-script",
+    "ashinzekene.nestjs"
+  ]
 }
