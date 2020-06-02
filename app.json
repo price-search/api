@@ -7,5 +7,6 @@
     "NPM_CONFIG_PRODUCTION": {
       "value": false
     }
-  }
+  },
+  "addons": ["heroku-postgresql:hobby-dev"]
 }
