@@ -1,0 +1,7 @@
+{
+  "name": "Price Search API",
+  "success_url": "/api/docs",
+  "scripts": {
+    "postdeploy": "npm run test:e2e"
+  }
+}
