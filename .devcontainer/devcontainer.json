@@ -14,7 +14,8 @@
     "ashinzekene.nestjs",
     "github.vscode-pull-request-github",
     "mhutchie.git-graph",
-    "eamodio.gitlens"
+    "eamodio.gitlens",
+    "visualstudioexptteam.vscodeintellicode"
   ],
   "postCreateCommand": "npm install",
   "remoteUser": "vscode"
