@@ -4,9 +4,6 @@ const password = process.env.TYPEORM_PASSWORD || 'pass';
 const host = process.env.TYPEORM_HOST || 'postgres';
 const port = parseInt(process.env.TYPEORM_PORT, 10) || 5432;
 const database = process.env.TYPEORM_DATABASE || 'data';
-// const dropSchema = process.env.TYPEORM_DROP_SCHEMA
-//   ? process.env.TYPEORM_DROP_SCHEMA === 'true'
-//   : true;
 
 module.exports = {
   type,
@@ -18,6 +15,5 @@ module.exports = {
       ? 'src/**/*.entity.ts'
       : 'dist/**/*.entity.js',
   ],
-  // dropSchema,
   synchronize: true,
 };
