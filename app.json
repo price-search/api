@@ -6,9 +6,6 @@
   "env": {
     "NPM_CONFIG_PRODUCTION": {
       "value": false
-    },
-    "TYPEORM_DROP_SCHEMA": {
-      "value": false
     }
   },
   "addons": ["heroku-postgresql:hobby-dev"]
