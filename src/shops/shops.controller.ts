@@ -10,7 +10,7 @@ import { ApiTags } from '@nestjs/swagger';
     type: Shop,
   },
 })
-@ApiTags('shops')
+@ApiTags('Shops')
 @Controller('shops')
 export class ShopsController implements CrudController<Shop> {
   constructor(public service: ShopsService) {}
