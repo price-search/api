@@ -15,7 +15,7 @@ describe('AppController (e2e)', () => {
     await app.init();
   });
 
-  it('Create product', () => {
+  it('Create products', () => {
     return request(app.getHttpServer())
       .post('/products/bulk')
       .send({
