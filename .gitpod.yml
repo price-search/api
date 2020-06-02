@@ -11,9 +11,9 @@ ports:
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
 tasks:
   - name: Opening Swagger UI
-    command: gp await-port 3000 && gp preview http://localhost:3000/api-docs; exit
+    command: gp await-port 3000 && gp preview http://localhost:3000/api/docs; exit
   - name: Running API
-    init: npm install && npm run build
+    init: npm install && npm run build && npm run test:e2e
     command: npm run start:dev
   - name: Terminal
 
