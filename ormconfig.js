@@ -18,6 +18,6 @@ module.exports = {
       ? 'src/**/*.entity.ts'
       : 'dist/**/*.entity.js',
   ],
-  // dropSchema,
-  synchronize: true,
+  // dropSchema: true,
+  // synchronize: true,
 };
