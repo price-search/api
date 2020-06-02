@@ -9,6 +9,9 @@ export class Product {
   @Column()
   public name!: string;
 
+  @Column()
+  public imageUrl: string;
+
   @OneToMany(
     () => Offer,
     offer => offer.product,

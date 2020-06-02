@@ -1,10 +1,5 @@
 {
   "editor.formatOnSave": true,
-  "cSpell.words": [
-    "nestjs",
-    "nestjsx",
-    "postgres",
-    "reviewdog",
-    "typeorm"
-]
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "cSpell.words": ["nestjs", "nestjsx", "postgres", "reviewdog", "typeorm"]
 }
