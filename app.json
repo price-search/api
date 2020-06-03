@@ -1,0 +1,12 @@
+{
+  "success_url": "/api/docs",
+  "scripts": {
+    "postdeploy": "NODE_ENV=test npm run test:e2e"
+  },
+  "env": {
+    "NPM_CONFIG_PRODUCTION": {
+      "value": false
+    }
+  },
+  "addons": ["heroku-postgresql:hobby-dev"]
+}
