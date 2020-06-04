@@ -22,7 +22,7 @@
     "db:diagram": "typeorm-uml ormconfig.js",
     "seed:config": "ts-node ./node_modules/typeorm-seeding/dist/cli.js config",
     "seed:run": "ts-node ./node_modules/typeorm-seeding/dist/cli.js seed",
-    "seed:run:prod": "npx -q -p typescript -p ts-node ts-node ./node_modules/typeorm-seeding/dist/cli.js seed",
+    "seed:run:prod": "npx -p typescript -p ts-node ts-node ./node_modules/typeorm-seeding/dist/cli.js seed",
     "schema:drop": "ts-node ./node_modules/typeorm/cli.js schema:drop",
     "schema:sync": "ts-node ./node_modules/typeorm/cli.js schema:sync"
   },
