@@ -35,5 +35,6 @@ jobs:
           node-version: 12
       - run: npm ci
       - run: npm run build
+      - run: npm run seed:run
       - run: npm test -- --passWithNoTests
       - run: npm run test:e2e
