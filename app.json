@@ -1,7 +1,7 @@
 {
   "success_url": "/api/docs",
   "scripts": {
-    "postdeploy": "NODE_ENV=test npm run test:e2e"
+    "postdeploy": "npm run seed:run"
   },
   "env": {
     "NPM_CONFIG_PRODUCTION": {
