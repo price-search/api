@@ -16,4 +16,6 @@ module.exports = {
       : 'dist/**/*.entity.js',
   ],
   synchronize: true,
+  seeds: ['src/**/*{.ts,.js}'],
+  factories: ['src/**/*{.ts,.js}'],
 };
