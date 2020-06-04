@@ -20,10 +20,12 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "db:diagram": "typeorm-uml ormconfig.js",
+    "tsnode:prod": "npx -p typescript -p ts-node ts-node",
     "seed:config": "ts-node ./node_modules/typeorm-seeding/dist/cli.js config",
     "seed:run": "ts-node ./node_modules/typeorm-seeding/dist/cli.js seed",
-    "seed:run:prod": "npx -p typescript -p ts-node ts-node ./node_modules/typeorm-seeding/dist/cli.js seed",
+    "seed:run:prod": "npm run tsnode:prod ./node_modules/typeorm-seeding/dist/cli.js seed",
     "schema:drop": "ts-node ./node_modules/typeorm/cli.js schema:drop",
+    "schema:drop:prod": "npm run tsnode:prod ./node_modules/typeorm/cli.js schema:drop",
     "schema:sync": "ts-node ./node_modules/typeorm/cli.js schema:sync"
   },
   "dependencies": {
