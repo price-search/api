@@ -1,12 +1,7 @@
 {
   "success_url": "/api/docs",
   "scripts": {
-    "postdeploy": "npm run seed:run"
-  },
-  "env": {
-    "NPM_CONFIG_PRODUCTION": {
-      "value": false
-    }
+    "postdeploy": "npm run seed:run:prod"
   },
   "addons": ["heroku-postgresql:hobby-dev"]
 }
