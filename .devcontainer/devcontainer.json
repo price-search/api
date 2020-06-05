@@ -3,7 +3,7 @@
   "name": "Ubuntu + Postgres",
   "dockerComposeFile": "docker-compose.yml",
   "service": "ubuntu",
-  "workspaceFolder": "/workspace/backend",
+  "workspaceFolder": "/workspace/api",
   "settings": {
     "terminal.integrated.shell.linux": "/bin/zsh"
   },
