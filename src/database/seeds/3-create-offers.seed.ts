@@ -20,7 +20,7 @@ export default class CreateOffers implements Seeder {
           },
         },
         {
-          value: 2.0,
+          value: 2.45,
           product: {
             id: 2,
           },
@@ -29,7 +29,7 @@ export default class CreateOffers implements Seeder {
           },
         },
         {
-          value: 3.0,
+          value: 3.15,
           product: {
             id: 3,
           },
@@ -38,7 +38,7 @@ export default class CreateOffers implements Seeder {
           },
         },
         {
-          value: 4.0,
+          value: 4.25,
           product: {
             id: 4,
           },
@@ -47,7 +47,7 @@ export default class CreateOffers implements Seeder {
           },
         },
         {
-          value: 5.0,
+          value: 3.5,
           product: {
             id: 5,
           },
@@ -56,7 +56,7 @@ export default class CreateOffers implements Seeder {
           },
         },
         {
-          value: 6.0,
+          value: 2.75,
           product: {
             id: 6,
           },
@@ -65,7 +65,7 @@ export default class CreateOffers implements Seeder {
           },
         },
         {
-          value: 7.0,
+          value: 5.5,
           product: {
             id: 7,
           },
@@ -74,7 +74,7 @@ export default class CreateOffers implements Seeder {
           },
         },
         {
-          value: 8.0,
+          value: 3.5,
           product: {
             id: 8,
           },
@@ -83,7 +83,7 @@ export default class CreateOffers implements Seeder {
           },
         },
         {
-          value: 9.0,
+          value: 6.0,
           product: {
             id: 9,
           },
@@ -92,7 +92,7 @@ export default class CreateOffers implements Seeder {
           },
         },
         {
-          value: 10.0,
+          value: 4.2,
           product: {
             id: 10,
           },
@@ -101,7 +101,7 @@ export default class CreateOffers implements Seeder {
           },
         },
         {
-          value: 1.0,
+          value: 5.8,
           product: {
             id: 11,
           },
@@ -110,7 +110,7 @@ export default class CreateOffers implements Seeder {
           },
         },
         {
-          value: 2.0,
+          value: 3.5,
           product: {
             id: 12,
           },
@@ -119,7 +119,7 @@ export default class CreateOffers implements Seeder {
           },
         },
         {
-          value: 3.0,
+          value: 1.99,
           product: {
             id: 13,
           },
@@ -137,7 +137,7 @@ export default class CreateOffers implements Seeder {
           },
         },
         {
-          value: 5.0,
+          value: 3.5,
           product: {
             id: 15,
           },
@@ -146,7 +146,7 @@ export default class CreateOffers implements Seeder {
           },
         },
         {
-          value: 6.0,
+          value: 1.99,
           product: {
             id: 16,
           },
@@ -155,7 +155,7 @@ export default class CreateOffers implements Seeder {
           },
         },
         {
-          value: 7.0,
+          value: 1.99,
           product: {
             id: 17,
           },
@@ -164,7 +164,7 @@ export default class CreateOffers implements Seeder {
           },
         },
         {
-          value: 8.0,
+          value: 3.5,
           product: {
             id: 18,
           },
@@ -173,7 +173,7 @@ export default class CreateOffers implements Seeder {
           },
         },
         {
-          value: 9.0,
+          value: 2.45,
           product: {
             id: 19,
           },
@@ -182,7 +182,7 @@ export default class CreateOffers implements Seeder {
           },
         },
         {
-          value: 10.0,
+          value: 3.8,
           product: {
             id: 20,
           },
@@ -191,7 +191,7 @@ export default class CreateOffers implements Seeder {
           },
         },
         {
-          value: 1.0,
+          value: 2.45,
           product: {
             id: 21,
           },
@@ -209,7 +209,7 @@ export default class CreateOffers implements Seeder {
           },
         },
         {
-          value: 3.0,
+          value: 2.45,
           product: {
             id: 23,
           },
@@ -227,7 +227,7 @@ export default class CreateOffers implements Seeder {
           },
         },
         {
-          value: 5.0,
+          value: 1.9,
           product: {
             id: 25,
           },
@@ -236,7 +236,7 @@ export default class CreateOffers implements Seeder {
           },
         },
         {
-          value: 6.0,
+          value: 3.0,
           product: {
             id: 26,
           },
@@ -245,7 +245,7 @@ export default class CreateOffers implements Seeder {
           },
         },
         {
-          value: 7.0,
+          value: 2.59,
           product: {
             id: 27,
           },
@@ -254,7 +254,7 @@ export default class CreateOffers implements Seeder {
           },
         },
         {
-          value: 8.0,
+          value: 3.99,
           product: {
             id: 28,
           },

@@ -38,7 +38,7 @@ export default class CreateProducts implements Seeder {
         {
           name: 'Garoto',
           imageUrl:
-            'https://lh3.googleusercontent.com/proxy/Ecj4kV9UJI2H-s6OoT6-4P2MraYH_Y-4Cdm3BkKrGDnnOrf2kKn61o15YH3nwcWyRo2_C6YUZRj7NuVwm-PhLp2BFe8AxxXgDvF8VrDG1t-6DfPaMqOwo-vm3Gp2ICCh',
+            'https://www.opingodoce.com.br/wp-content/uploads/2019/05/caixa_de_bombom_garoto_sortidos_355g_distribuidora_doces_rj-600x600.jpg',
         },
         {
           name: 'Waffer Chocolate',
@@ -51,9 +51,9 @@ export default class CreateProducts implements Seeder {
             'https://conteudo.imguol.com.br/c/noticias/2013/10/11/kibon---sorvete-1381506265717_615x470.jpg',
         },
         {
-          name: 'Tial Light',
+          name: 'Talento',
           imageUrl:
-            'https://lh3.googleusercontent.com/proxy/bcNgTQ3qDqXxjuN0gtC5Poz7-TtZNHxn2uX7ymg19gW4yxGUfQ4grTRmTVZA7ukHltHVHnXxhrpkuOvGC9CvyfvFleU1pUAhShgaQiR4kXg227UAqB58RnmEhQmviBQF',
+            'https://www.confianca.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/c/h/chocolate-castanha-para-tablete-garoto-90g.jpg',
         },
         {
           name: 'Ades maça',
