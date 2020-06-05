@@ -11,7 +11,7 @@ import { ApiTags } from '@nestjs/swagger';
   },
   params: {
     shopId: {
-      field: 'shopId',
+      field: 'shop.id',
       type: 'number',
     },
   },
@@ -35,7 +35,7 @@ export class ShopOffersController implements CrudController<Offer> {
   },
   params: {
     productId: {
-      field: 'productId',
+      field: 'product.id',
       type: 'number',
     },
   },

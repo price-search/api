@@ -11,7 +11,7 @@ export default class CreateOffers implements Seeder {
       .into(Offer)
       .values([
         {
-          value: 1.0,
+          value: 1.5,
           product: {
             id: 1,
           },

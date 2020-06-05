@@ -1,10 +1,10 @@
-import { Entity, PrimaryGeneratedColumn, Column, ManyToOne } from 'typeorm';
+import { Entity, Column, ManyToOne } from 'typeorm';
 import { Product } from '../products/product.entity';
 import { Shop } from '../shops/shop.entity';
 
 @Entity()
 export class Offer {
-  @Column()
+  @Column({ type: 'float', nullable: false })
   public value!: number;
 
   @ManyToOne(
