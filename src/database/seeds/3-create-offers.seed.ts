@@ -20,6 +20,15 @@ export default class CreateOffers implements Seeder {
           },
         },
         {
+          value: 2,
+          product: {
+            id: 1,
+          },
+          shop: {
+            id: 2,
+          },
+        },
+        {
           value: 2.45,
           product: {
             id: 2,
