@@ -12,6 +12,7 @@ export class Offer {
     product => product.offers,
     {
       primary: true,
+      nullable: false,
     },
   )
   public product!: Product;
@@ -21,6 +22,7 @@ export class Offer {
     shop => shop.offers,
     {
       primary: true,
+      nullable: false,
     },
   )
   public shop!: Shop;
