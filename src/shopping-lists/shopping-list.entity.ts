@@ -14,18 +14,24 @@ export class ShoppingList {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column()
+  @Column({ nullable: false })
   name: string;
+
+  @Column({ nullable: false })
+  userId: string;
 
   @ManyToOne(
     () => User,
     user => user.shoppingLists,
+    {
+      nullable: false,
+    },
   )
   user: User;
 
-  @ManyToMany(() => Product)
+  @ManyToMany(() => Product, { cascade: true })
   @JoinTable({
-    name: 'shopping_list_has_product',
+    name: 'shopping_list_has_products',
   })
   products: Product[];
 }

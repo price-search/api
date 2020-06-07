@@ -9,6 +9,9 @@ export class User {
   @OneToMany(
     () => ShoppingList,
     shoppingList => shoppingList.user,
+    {
+      cascade: true,
+    },
   )
   shoppingLists: ShoppingList[];
 }
