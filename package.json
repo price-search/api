@@ -28,7 +28,7 @@
     "schema:drop:prod": "npm run tsnode:prod ./node_modules/typeorm/cli.js schema:drop",
     "schema:sync": "ts-node ./node_modules/typeorm/cli.js schema:sync",
     "db:reset": "npm run schema:drop && npm run seed:run",
-    "db:reset:drop": "npm run schema:drop:prod && npm run seed:run:prod"
+    "db:reset:prod": "npm run schema:drop:prod && npm run seed:run:prod"
   },
   "dependencies": {
     "@nestjs/common": "^7.1.2",
