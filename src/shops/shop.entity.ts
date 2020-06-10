@@ -9,6 +9,15 @@ export class Shop {
   @Column()
   public name!: string;
 
+  @Column()
+  public adress: string;
+
+  @Column()
+  public latitude: number;
+
+  @Column()
+  public longitude: number;
+
   @OneToMany(
     () => Offer,
     offer => offer.shop,
