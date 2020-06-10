@@ -7,8 +7,8 @@ define(Product, (faker: typeof Faker) => {
   const firstName = faker.name.firstName(gender);
   const lastName = faker.name.lastName(gender);
 
-  const user = new Product();
-  user.name = `${firstName} ${lastName}`;
-  user.password = faker.random.word();
-  return user;
+  const product = new Product();
+  product.name = `${firstName}`;
+  product.imageUrl = `${lastName}`;
+  return product;
 });

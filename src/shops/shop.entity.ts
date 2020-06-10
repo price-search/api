@@ -13,10 +13,10 @@ export class Shop {
   public adress: string;
 
   @Column()
-  public latitude: number;
+  public latitude: string;
 
   @Column()
-  public longitude: number;
+  public longitude: string;
 
   @OneToMany(
     () => Offer,
