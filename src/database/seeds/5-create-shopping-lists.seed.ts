@@ -25,7 +25,7 @@ export default class CreateShoppingLists implements Seeder {
           ],
         },
         {
-          name: 'Mes',
+          name: 'Mês',
           user: {
             id: 'user1',
           },
