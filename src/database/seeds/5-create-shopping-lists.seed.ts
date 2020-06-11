@@ -13,7 +13,7 @@ export default class CreateShoppingLists implements Seeder {
         {
           name: 'Churrasco',
           user: {
-            id: 'user1',
+            id: '100919359573998466075',
           },
           products: [
             {
@@ -27,7 +27,7 @@ export default class CreateShoppingLists implements Seeder {
         {
           name: 'Mês',
           user: {
-            id: 'user1',
+            id: '100919359573998466075',
           },
           products: [
             {

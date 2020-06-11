@@ -11,19 +11,6 @@ export default class CreateUsers implements Seeder {
       .into(User)
       .values([
         {
-          id: 'user1',
-          name: 'Thalis',
-        },
-        {
-          id: 'user2',
-          name: 'Igor',
-        },
-        {
-          id: 'user3',
-          name: 'Lucas',
-        },
-        {
-          id: 'user4',
           id: '100919359573998466075',
         },
       ])

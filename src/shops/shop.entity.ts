@@ -1,5 +1,6 @@
 import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
 import { Offer } from '../offers/offer.entity';
+import { type } from 'os';
 
 @Entity()
 export class Shop {
@@ -12,11 +13,11 @@ export class Shop {
   @Column()
   public adress: string;
 
-  @Column()
-  public latitude: string;
+  @Column({ type: 'float' })
+  public latitude: number;
 
-  @Column()
-  public longitude: string;
+  @Column({ type: 'float' })
+  public longitude: number;
 
   @OneToMany(
     () => Offer,
