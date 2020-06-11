@@ -10,7 +10,7 @@ export class Shop {
   public name!: string;
 
   @Column()
-  public adress: string;
+  public address: string;
 
   @Column({ type: 'float' })
   public latitude: number;
