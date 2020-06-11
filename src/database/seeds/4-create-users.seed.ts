@@ -11,7 +11,16 @@ export default class CreateUsers implements Seeder {
       .into(User)
       .values([
         {
-          id: 'user',
+          id: '100919359573998466075', // Felipe
+        },
+        {
+          id: '107011896791220646606', // Lucas
+        },
+        {
+          id: '109982158321812973853', // Igor
+        },
+        {
+          id: '108924975215186330900', // Thalis
         },
       ])
       .execute();
