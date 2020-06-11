@@ -1,4 +1,4 @@
-import { Entity, PrimaryColumn, OneToMany, Column } from 'typeorm';
+import { Entity, PrimaryColumn, OneToMany } from 'typeorm';
 import { ShoppingList } from '../shopping-lists/shopping-list.entity';
 
 @Entity()
