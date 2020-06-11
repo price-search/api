@@ -17,7 +17,10 @@ import { ApiTags } from '@nestjs/swagger';
   },
   query: {
     join: {
-      products: {
+      listProducts: {
+        eager: true,
+      },
+      'listProducts.product': {
         eager: true,
       },
     },

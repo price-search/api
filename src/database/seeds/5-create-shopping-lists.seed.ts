@@ -15,9 +15,9 @@ export default class CreateShoppingLists implements Seeder {
           user: {
             id: 'user',
           },
-          products: [
+          listProducts: [
             {
-              id: 1,
+              productId: 1,
             },
           ],
         },

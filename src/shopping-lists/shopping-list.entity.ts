@@ -5,9 +5,11 @@ import {
   ManyToMany,
   JoinTable,
   ManyToOne,
+  OneToMany,
 } from 'typeorm';
 import { Product } from '../products/product.entity';
 import { User } from '../users/user.entity';
+import { ListProduct } from './list-product.entity';
 
 @Entity()
 export class ShoppingList {
@@ -29,9 +31,9 @@ export class ShoppingList {
   )
   user: User;
 
-  @ManyToMany(() => Product, { cascade: true })
-  @JoinTable({
-    name: 'shopping_list_has_products',
-  })
-  products: Product[];
+  @OneToMany(
+    () => ListProduct,
+    listProduct => listProduct.shoppingList,
+  )
+  listProducts: ListProduct[];
 }
