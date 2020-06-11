@@ -1,6 +1,4 @@
 import { Offer } from '../../offers/offer.entity';
-import { Shop } from '../../shops/shop.entity';
-import { Product } from '../../products/product.entity';
 import Faker from 'faker';
 import { define } from 'typeorm-seeding';
 
