@@ -24,7 +24,7 @@ export default class CreateUsers implements Seeder {
         },
         {
           id: 'user4',
-          name: 'Jilo',
+          id: '100919359573998466075',
         },
       ])
       .execute();
