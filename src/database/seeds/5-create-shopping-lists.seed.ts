@@ -13,11 +13,34 @@ export default class CreateShoppingLists implements Seeder {
         {
           name: 'Churrasco',
           user: {
-            id: 'user',
+            id: 'user1',
           },
           products: [
             {
               id: 1,
+            },
+            {
+              id: 7,
+            },
+          ],
+        },
+        {
+          name: 'Mes',
+          user: {
+            id: 'user1',
+          },
+          products: [
+            {
+              id: 5,
+            },
+            {
+              id: 2,
+            },
+            {
+              id: 7,
+            },
+            {
+              id: 5,
             },
           ],
         },

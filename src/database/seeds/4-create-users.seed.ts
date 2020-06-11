@@ -5,14 +5,26 @@ import { User } from '../../users/user.entity';
 
 export default class CreateUsers implements Seeder {
   public async run(factory: Factory, connection: Connection): Promise<any> {
-    await factory(User)().createMany(10);
     await connection
       .createQueryBuilder()
       .insert()
       .into(User)
       .values([
         {
-          id: 'user',
+          id: 'user1',
+          name: 'Thalis',
+        },
+        {
+          id: 'user2',
+          name: 'Igor',
+        },
+        {
+          id: 'user3',
+          name: 'Lucas',
+        },
+        {
+          id: 'user4',
+          name: 'Jilo',
         },
       ])
       .execute();
