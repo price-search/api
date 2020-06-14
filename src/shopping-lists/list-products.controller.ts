@@ -25,7 +25,7 @@ import { ApiTags } from '@nestjs/swagger';
         eager: true,
         //select: false,
       },
-      product: {
+      'shoppingList.products': {
         eager: true,
       },
     },
