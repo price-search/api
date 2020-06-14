@@ -19,9 +19,6 @@ export class ShoppingList {
   @Column({ nullable: false })
   name: string;
 
-  @Column({ nullable: false })
-  userId: string;
-
   @ManyToOne(
     () => User,
     user => user.shoppingLists,

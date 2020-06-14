@@ -12,33 +12,11 @@ export default class CreateShoppingLists implements Seeder {
       .values([
         {
           name: 'Churrasco',
-          userId: '100919359573998466075',
-          listProducts: [
-            {
-              productId: 1,
-            },
-            {
-              productId: 7,
-            },
-          ],
+          user: { id: '100919359573998466075' },
         },
         {
           name: 'Mês',
-          userId: '100919359573998466075',
-          listProducts: [
-            {
-              productId: 5,
-            },
-            {
-              productId: 2,
-            },
-            {
-              productId: 7,
-            },
-            {
-              productId: 4,
-            },
-          ],
+          user: { id: '100919359573998466075' },
         },
       ])
       .execute();

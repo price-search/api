@@ -18,4 +18,5 @@ module.exports = {
     `${type}://${username}:${password}@${host}:${port}/${database}`,
   entities,
   synchronize: true,
+  logging: true,
 };
