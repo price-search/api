@@ -2,13 +2,10 @@ import {
   Entity,
   PrimaryGeneratedColumn,
   Column,
-  ManyToMany,
-  JoinTable,
   ManyToOne,
   OneToMany,
   PrimaryColumn,
 } from 'typeorm';
-import { Product } from '../products/product.entity';
 import { User } from '../users/user.entity';
 import { ListProduct } from './list-product.entity';
 
@@ -27,7 +24,7 @@ export class ShoppingList {
     () => User,
     user => user.shoppingLists,
   )
-  publicuser: User;
+  user: User;
 
   @OneToMany(
     () => ListProduct,
