@@ -1,4 +1,4 @@
-import { Entity, Column, ManyToOne } from 'typeorm';
+import { Entity, Column, ManyToOne, PrimaryColumn } from 'typeorm';
 import { Product } from '../products/product.entity';
 import { Shop } from '../shops/shop.entity';
 
@@ -7,23 +7,27 @@ export class Offer {
   @Column({ type: 'float', nullable: false })
   public value!: number;
 
+  @PrimaryColumn()
+  public productId!: number;
+
+  @PrimaryColumn()
+  public shopId!: number;
+
   @ManyToOne(
     () => Product,
     product => product.offers,
     {
       primary: true,
-      nullable: false,
     },
   )
-  public product!: Product;
+  public product: Product;
 
   @ManyToOne(
     () => Shop,
     shop => shop.offers,
     {
       primary: true,
-      nullable: false,
     },
   )
-  public shop!: Shop;
+  public shop: Shop;
 }

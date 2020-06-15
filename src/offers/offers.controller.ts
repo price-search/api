@@ -11,17 +11,18 @@ import { ApiTags } from '@nestjs/swagger';
   },
   params: {
     shopId: {
-      field: 'shop.id',
+      field: 'shopId',
       type: 'number',
+    },
+    productId: {
+      field: 'productId',
+      type: 'number',
+      primary: true,
     },
   },
   query: {
     join: {
       product: {
-        eager: true,
-      },
-      shop: {
-        select: false,
         eager: true,
       },
     },
@@ -39,16 +40,17 @@ export class ShopOffersController implements CrudController<Offer> {
   },
   params: {
     productId: {
-      field: 'product.id',
+      field: 'productId',
       type: 'number',
+    },
+    shopId: {
+      field: 'shopId',
+      type: 'number',
+      primary: true,
     },
   },
   query: {
     join: {
-      product: {
-        select: false,
-        eager: true,
-      },
       shop: {
         eager: true,
       },
