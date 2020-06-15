@@ -11,27 +11,33 @@ import { ApiTags } from '@nestjs/swagger';
   },
   params: {
     userId: {
-      field: 'shoppingList.user.id',
+      // field: 'shoppingList.user.id',
       type: 'string',
+      disabled: true,
     },
     shoppingListId: {
-      field: 'shoppingList.id',
+      field: 'shoppingListId',
       type: 'number',
+    },
+    productId: {
+      field: 'productId',
+      type: 'number',
+      primary: true,
     },
   },
   query: {
     join: {
-      shoppingList: {
-        eager: true,
-        select: false,
-      },
-      'shoppingList.user': {
-        eager: true,
-        select: false,
-      },
       product: {
         eager: true,
       },
+      // shoppingList: {
+      //   eager: true,
+      //   select: false,
+      // },
+      // 'shoppingList.user': {
+      //   eager: true,
+      //   select: false,
+      // },
     },
   },
 })

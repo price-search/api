@@ -4,19 +4,26 @@ import { ShoppingList } from './shopping-list.entity';
 
 @Entity()
 export class ListProduct {
+  @PrimaryColumn()
+  public shoppingListId!: number;
+
+  @PrimaryColumn()
+  public productId!: number;
+
   @ManyToOne(
     () => ShoppingList,
     shoppingList => shoppingList.listProducts,
     {
       primary: true,
-      nullable: false,
+      persistence: false,
+      onDelete: 'CASCADE',
     },
   )
-  public shoppingList!: ShoppingList;
+  public shoppingList: ShoppingList;
 
   @ManyToOne(() => Product, {
     primary: true,
-    nullable: false,
+    persistence: false,
   })
-  public product!: Product;
+  public product: Product;
 }
