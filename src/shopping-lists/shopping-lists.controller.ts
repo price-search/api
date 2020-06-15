@@ -11,16 +11,12 @@ import { ApiTags } from '@nestjs/swagger';
   },
   params: {
     userId: {
-      field: 'user.id',
+      field: 'userId',
       type: 'string',
     },
   },
   query: {
     join: {
-      user: {
-        eager: true,
-        // select: false,
-      },
       listProducts: {
         eager: true,
       },

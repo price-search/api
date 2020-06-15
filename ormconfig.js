@@ -10,6 +10,7 @@ const entities = [
     ? 'src/**/*.entity.ts'
     : 'dist/**/*.entity.js',
 ];
+const logging = process.env.NODE_ENV !== 'production';
 
 module.exports = {
   type,
@@ -18,5 +19,5 @@ module.exports = {
     `${type}://${username}:${password}@${host}:${port}/${database}`,
   entities,
   synchronize: true,
-  logging: true,
+  logging,
 };

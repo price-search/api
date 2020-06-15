@@ -6,6 +6,7 @@ import {
   JoinTable,
   ManyToOne,
   OneToMany,
+  PrimaryColumn,
 } from 'typeorm';
 import { Product } from '../products/product.entity';
 import { User } from '../users/user.entity';
@@ -19,14 +20,14 @@ export class ShoppingList {
   @Column({ nullable: false })
   name: string;
 
+  @PrimaryColumn({ nullable: false })
+  userId: number;
+
   @ManyToOne(
     () => User,
     user => user.shoppingLists,
-    {
-      nullable: false,
-    },
   )
-  user: User;
+  publicuser: User;
 
   @OneToMany(
     () => ListProduct,

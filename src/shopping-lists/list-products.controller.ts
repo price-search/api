@@ -1,5 +1,5 @@
 import { Controller } from '@nestjs/common';
-import { Crud, CrudController, Override } from '@nestjsx/crud';
+import { Crud, CrudController } from '@nestjsx/crud';
 
 import { ListProduct } from './list-product.entity';
 import { ListProductsService } from './list-products.service';
@@ -11,7 +11,6 @@ import { ApiTags } from '@nestjs/swagger';
   },
   params: {
     userId: {
-      // field: 'shoppingList.user.id',
       type: 'string',
       disabled: true,
     },
@@ -30,14 +29,6 @@ import { ApiTags } from '@nestjs/swagger';
       product: {
         eager: true,
       },
-      // shoppingList: {
-      //   eager: true,
-      //   select: false,
-      // },
-      // 'shoppingList.user': {
-      //   eager: true,
-      //   select: false,
-      // },
     },
   },
 })
