@@ -4,7 +4,6 @@ import {
   Column,
   ManyToOne,
   OneToMany,
-  PrimaryColumn,
 } from 'typeorm';
 import { User } from '../users/user.entity';
 import { ListProduct } from './list-product.entity';
@@ -17,8 +16,8 @@ export class ShoppingList {
   @Column({ nullable: false })
   name: string;
 
-  @PrimaryColumn({ nullable: false })
-  userId: number;
+  @Column({ nullable: false })
+  userId: string;
 
   @ManyToOne(
     () => User,
