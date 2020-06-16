@@ -19,9 +19,17 @@ import { ApiTags } from '@nestjs/swagger';
     join: {
       listProducts: {
         eager: true,
+        alias: 'lp',
       },
       'listProducts.product': {
         eager: true,
+        alias: 'lpP',
+      },
+      'listProducts.product.offers': {
+        alias: 'lpPO',
+      },
+      'listProducts.product.offers.shop': {
+        alias: 'lpPOS',
       },
     },
   },
