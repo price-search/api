@@ -1,4 +1,10 @@
-import { Entity, PrimaryColumn, OneToMany } from 'typeorm';
+import {
+  Entity,
+  PrimaryColumn,
+  OneToMany,
+  AfterInsert,
+  getConnection,
+} from 'typeorm';
 import { ShoppingList } from '../shopping-lists/shopping-list.entity';
 
 @Entity()
@@ -14,4 +20,19 @@ export class User {
     },
   )
   shoppingLists: ShoppingList[];
+
+  @AfterInsert()
+  insertFavorites() {
+    getConnection()
+      .createQueryBuilder()
+      .insert()
+      .into(ShoppingList)
+      .values([
+        {
+          name: 'Favoritos',
+          user: { id: this.id },
+        },
+      ])
+      .execute();
+  }
 }
