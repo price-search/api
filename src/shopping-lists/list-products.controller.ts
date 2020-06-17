@@ -28,6 +28,13 @@ import { ApiTags } from '@nestjs/swagger';
     join: {
       product: {
         eager: true,
+        alias: 'p',
+      },
+      'product.offers': {
+        alias: 'pO',
+      },
+      'product.offers.shop': {
+        alias: 'pOS',
       },
     },
   },
