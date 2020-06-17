@@ -1,4 +1,10 @@
-import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
+import {
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  OneToMany,
+  AfterLoad,
+} from 'typeorm';
 import { Offer } from '../offers/offer.entity';
 
 @Entity()
@@ -17,4 +23,9 @@ export class Product {
     offer => offer.product,
   )
   public offers!: Offer[];
+
+  @AfterLoad()
+  sortOffersByPrice() {
+    this.offers.sort((a, b) => (a.value > b.value ? 1 : -1));
+  }
 }
