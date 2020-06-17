@@ -26,6 +26,6 @@ export class Product {
 
   @AfterLoad()
   sortOffersByPrice() {
-    this.offers.sort((a, b) => (a.value > b.value ? 1 : -1));
+    this.offers?.sort((a, b) => (a.value > b.value ? 1 : -1));
   }
 }
