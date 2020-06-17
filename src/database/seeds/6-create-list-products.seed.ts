@@ -15,23 +15,27 @@ export default class CreateShoppingLists implements Seeder {
           product: { id: 1 },
         },
         {
-          shoppingList: { id: 1 },
-          product: { id: 7 },
+          shoppingList: { id: 2 },
+          product: { id: 1 },
         },
         {
           shoppingList: { id: 2 },
+          product: { id: 7 },
+        },
+        {
+          shoppingList: { id: 3 },
           product: { id: 5 },
         },
         {
-          shoppingList: { id: 2 },
+          shoppingList: { id: 3 },
           product: { id: 2 },
         },
         {
-          shoppingList: { id: 2 },
+          shoppingList: { id: 3 },
           product: { id: 7 },
         },
         {
-          shoppingList: { id: 2 },
+          shoppingList: { id: 3 },
           product: { id: 4 },
         },
       ])
