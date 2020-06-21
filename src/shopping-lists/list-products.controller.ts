@@ -12,7 +12,7 @@ import { ApiTags } from '@nestjs/swagger';
   params: {
     userId: {
       type: 'string',
-      disabled: true,
+      field: 'shoppingListUserId',
     },
     shoppingListId: {
       field: 'shoppingListId',
