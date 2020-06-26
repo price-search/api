@@ -20,4 +20,10 @@ describe('AppController (e2e)', () => {
       .get('/products')
       .expect(200);
   });
+
+  it('Retrieve all users', () => {
+    return request(app.getHttpServer())
+      .get('/users')
+      .expect(200);
+  });
 });
