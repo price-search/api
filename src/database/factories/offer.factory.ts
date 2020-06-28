@@ -1,17 +1,13 @@
 import { Offer } from '../../offers/offer.entity';
-import Faker from 'faker';
-import { define, factory } from 'typeorm-seeding';
-import { Shop } from '../../shops/shop.entity';
-import { Product } from '../../products/product.entity';
+import * as Faker from 'faker';
+import { define } from 'typeorm-seeding';
+
 
 define(Offer, (faker: typeof Faker) => {
-  const gender = faker.random.number(1);
-  const product = faker.random.number(gender);
-  const shop = faker.random.number(gender);
 
   const offer = new Offer();
-  offer.value = faker.random.number();
-  offer.product = factory(Product)() as any;
-  offer.shop = factory(Shop)() as any;
+  offer.value = faker.random.number({ min: 1, max: 6, precision: 0.01 });
+  offer.productId = faker.random.number({ min: 1, max: 28 });
+  offer.shopId = faker.random.number({ min: 1, max: 5 });
   return offer;
 });
