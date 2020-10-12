@@ -8,6 +8,9 @@ export class ListProduct {
   public shoppingListId!: number;
 
   @PrimaryColumn()
+  public shoppingListUserId!: string;
+
+  @PrimaryColumn()
   public productId!: number;
 
   @ManyToOne(
